@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Nunito', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        180deg,
+        #bfe9ff,
+        #e6f8ff
+    );
+    overflow:hidden;
+}
+
+/* TARJETA */
+
+.login-card{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    z-index:10;
+}
+
+.cinna{
+    width:150px;
+    margin-bottom:10px;
+    animation:float 3s ease-in-out infinite;
+}
+
+h1{
+    color:#5ea8d8;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:15px;
+    background:#f3f9ff;
+    outline:none;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:15px;
+    background:#8ed6ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#72c8fa;
+}
+
+#mensaje{
+    margin-top:15px;
+    color:#ff6b81;
+    font-weight:bold;
+}
+
+/* NUBES */
+
+.cloud{
+    position:absolute;
+    background:white;
+    border-radius:50px;
+    opacity:.5;
+}
+
+.cloud::before,
+.cloud::after{
+    content:"";
+    position:absolute;
+    background:white;
+    border-radius:50%;
+}
+
+.cloud1{
+    width:140px;
+    height:50px;
+    top:15%;
+    left:-200px;
+    animation:moveCloud 25s linear infinite;
+}
+
+.cloud1::before{
+    width:60px;
+    height:60px;
+    top:-30px;
+    left:20px;
+}
+
+.cloud1::after{
+    width:70px;
+    height:70px;
+    top:-35px;
+    right:20px;
+}
+
+.cloud2{
+    width:180px;
+    height:60px;
+    top:40%;
+    left:-250px;
+    animation:moveCloud 35s linear infinite;
+}
+
+.cloud2::before{
+    width:80px;
+    height:80px;
+    top:-40px;
+    left:25px;
+}
+
+.cloud2::after{
+    width:90px;
+    height:90px;
+    top:-45px;
+    right:25px;
+}
+
+.cloud3{
+    width:120px;
+    height:45px;
+    top:70%;
+    left:-180px;
+    animation:moveCloud 28s linear infinite;
+}
+
+.cloud3::before{
+    width:50px;
+    height:50px;
+    top:-25px;
+    left:15px;
+}
+
+.cloud3::after{
+    width:60px;
+    height:60px;
+    top:-30px;
+    right:15px;
+}
+
+@keyframes moveCloud{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(140vw);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}

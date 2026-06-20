@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengo algo para ti 💙</title>
+
+    <link rel="stylesheet" href="css/regalo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- GIF DE CINNAMOROLL -->
+
+        <div class="gif-container">
+
+            <img src="img/cinnamoroll.gif"
+                 alt="Cinnamoroll"
+                 class="cinna-gif">
+
+        </div>
+
+        <h1>🎁 Tengo algo para ti 🎁</h1>
+
+        <p class="subtitle">
+            Haz clic en cada regalo para descubrir una pista 💙
+        </p>
+
+        <div class="gifts">
+
+            <div class="gift" onclick="abrirRegalo(0)">
+                🎁
+            </div>
+
+            <div class="gift" onclick="abrirRegalo(1)">
+                🎁
+            </div>
+
+            <div class="gift" onclick="abrirRegalo(2)">
+                🎁
+            </div>
+
+            <div class="gift" onclick="abrirRegalo(3)">
+                🎁
+            </div>
+
+            <div class="gift" onclick="abrirRegalo(4)">
+                🎁
+            </div>
+
+        </div>
+
+        <div class="message-box" id="messageBox">
+
+            <h2 id="titulo"></h2>
+
+            <p id="mensaje"></p>
+
+        </div>
+
+        <button id="finalBtn">
+            Ver mensaje final 💙
+        </button>
+
+    </div>
+
+    <script src="js/regalo.js"></script>
+
+</body>
+
+</html>

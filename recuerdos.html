@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Recuerdos 💙</title>
+
+    <link rel="stylesheet" href="css/recuerdos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💙 Nuestros Recuerdos 💙</h1>
+
+        <p class="subtitle">
+            Algunos momentos que siempre guardaré conmigo ✨
+        </p>
+
+        <div class="slider">
+
+            <button class="nav prev" onclick="anterior()">
+                ❮
+            </button>
+
+            <div class="card">
+
+                <img id="imagen"
+                     src="img/recuerdo1.jpg"
+                     alt="Recuerdo">
+
+                <p id="texto">
+                    Aquí comenzó otro bonito recuerdo juntos 💙
+                </p>
+
+            </div>
+
+            <button class="nav next" onclick="siguiente()">
+                ❯
+            </button>
+
+        </div>
+
+        <button id="continuar">
+            Continuar 🎁
+        </button>
+
+    </div>
+
+    <script src="js/recuerdos.js"></script>
+
+</body>
+
+</html>
